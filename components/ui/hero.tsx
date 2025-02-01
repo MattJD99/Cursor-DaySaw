@@ -41,15 +41,15 @@ export function Hero() {
   }, []);
 
   return (
-    <div className="relative isolate">
+    <div className="relative isolate bg-white">
       {/* Background section with video */}
-      <div className="absolute inset-x-0 top-0 -z-10 h-[580px] overflow-hidden rounded-b-[80px]">
-        <div className="absolute inset-0 z-0">
+      <div className="absolute inset-x-0 top-0 -z-10 h-[580px] overflow-hidden">
+        <div className="absolute inset-0">
           <div className="relative w-full h-full">
             <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/30 to-white/90 z-10" />
             <video
               ref={videoRef}
-              className="w-full h-full object-cover rounded-b-[3rem] shadow-lg"
+              className="w-full h-full object-cover rounded-b-[80px]"
               autoPlay
               loop
               muted
