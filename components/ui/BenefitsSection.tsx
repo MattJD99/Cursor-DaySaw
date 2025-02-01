@@ -64,13 +64,9 @@ export function BenefitsSection() {
 
         {/* Make a Difference Section */}
         <div className="mx-auto mt-24 max-w-3xl text-center">
-          <h2 className="text-4xl sm:text-5xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
-            Make a Difference With Every Review
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
+            Local businesses just like yours are already seeing real results — be the next success story.
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            We believe in giving back to the community. For every review your business receives,
-            we donate a meal to Feeding America. Your success helps feed those in need.
-          </p>
         </div>
       </div>
     </section>
