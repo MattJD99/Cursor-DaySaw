@@ -28,7 +28,7 @@ export function BenefitsSection() {
   return (
     <section className="py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-12 bg-clip-text text-transparent bg-[linear-gradient(90deg,#4285f4,#34a853,#fbbc05,#ea4335)]">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-12 bg-clip-text text-transparent bg-[linear-gradient(90deg,#4285f4,#0f9d58,#f4b400,#db4437)]">
           Local businesses just like yours are already seeing real results — be the next success story.
         </h2>
         
