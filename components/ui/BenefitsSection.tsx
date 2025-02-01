@@ -28,8 +28,23 @@ export function BenefitsSection() {
   return (
     <section className="py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-12 bg-clip-text text-transparent bg-[linear-gradient(90deg,#4285f4,#0f9d58,#f4b400,#db4437)]">
-          Local businesses just like yours are already seeing real results — be the next success story.
+        <h2 className="text-2xl sm:text-3xl font-bold mb-12">
+          <span className="text-[#4285f4]">Local</span>{" "}
+          <span className="text-[#0f9d58]">businesses</span>{" "}
+          <span className="text-[#f4b400]">just</span>{" "}
+          <span className="text-[#db4437]">like</span>{" "}
+          <span className="text-[#4285f4]">yours</span>{" "}
+          <span className="text-[#0f9d58]">are</span>{" "}
+          <span className="text-[#f4b400]">already</span>{" "}
+          <span className="text-[#db4437]">seeing</span>{" "}
+          <span className="text-[#4285f4]">real</span>{" "}
+          <span className="text-[#0f9d58]">results</span>{" "}
+          <span className="text-[#f4b400]">—</span>{" "}
+          <span className="text-[#db4437]">be</span>{" "}
+          <span className="text-[#4285f4]">the</span>{" "}
+          <span className="text-[#0f9d58]">next</span>{" "}
+          <span className="text-[#f4b400]">success</span>{" "}
+          <span className="text-[#db4437]">story.</span>
         </h2>
         
         {/* Container with gradient border */}
