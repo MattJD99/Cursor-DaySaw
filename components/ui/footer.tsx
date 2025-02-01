@@ -60,10 +60,10 @@ export function Footer() {
             />
             <button
               type="submit"
-              className="relative rounded-full px-6 py-3 overflow-hidden group bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white shadow-lg shadow-blue-500/30 transition-all duration-300"
+              className="relative rounded-full px-6 py-3 overflow-hidden group bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white shadow-lg shadow-blue-500/30 transition-all duration-300"
             >
               <span className="relative text-[14px] leading-[20px] font-medium z-10">Subscribe</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </button>
           </form>
         </div>

@@ -15,10 +15,10 @@ export function CTA() {
             transition-all duration-300 
             group-hover:-translate-y-1"
           >
-            <h2 className="section-title mb-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600 transform group-hover:scale-105 transition-transform duration-300">
-              Ready to Transform Your Online Reviews?
+            <h2 className="text-4xl sm:text-5xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600 transform group-hover:scale-105 transition-transform duration-300">
+              Ready to Automate Your Reviews?
             </h2>
-            <p className="section-description text-gray-600">
+            <p className="text-lg text-gray-600">
               Join local businesses in your area who are using our platform to boost their reputation and attract more customers every day.
             </p>
           </div>
