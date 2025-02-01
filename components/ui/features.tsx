@@ -109,23 +109,19 @@ export function Features() {
           </div>
         </div>
 
-        <div className="mx-auto mt-24 max-w-3xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight gradient-text sm:text-4xl">
-            Make a Difference With Every Review
+        <div className="text-center mt-24">
+          <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+            <span className="text-[#4285f4]">Make</span>{" "}
+            <span className="text-[#0f9d58]">a</span>{" "}
+            <span className="text-[#f4b400]">Difference</span>{" "}
+            <span className="text-[#db4437]">With</span>{" "}
+            <span className="text-[#4285f4]">Every</span>{" "}
+            <span className="text-[#0f9d58]">Review</span>
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            We believe in giving back to the community. For every review your business receives,
-            we donate a meal to Feeding America. Your success helps feed those in need.
+          <p className="text-lg text-gray-600 mb-8">
+            We believe in giving back to the community. For every review your business receives, we donate a meal to Feeding America. Your success helps feed those in need.
           </p>
-          <div className="mt-8">
-            <Image
-              src="/images/feeding-america-logo.png"
-              alt="Feeding America"
-              width={500}
-              height={200}
-              className="h-48 w-auto mx-auto"
-            />
-          </div>
+          <img src="/images/feeding-america-logo.png" alt="Feeding America" className="mx-auto h-16" />
         </div>
       </div>
       <DotsBackground />

@@ -43,10 +43,10 @@ export function Hero() {
   return (
     <div className="relative isolate bg-white">
       {/* Background section with video */}
-      <div className="absolute inset-x-0 top-0 -z-10 h-[580px] overflow-hidden">
+      <div className="absolute inset-x-0 top-0 -z-10 h-[580px] overflow-hidden bg-white">
         <div className="absolute inset-0">
-          <div className="relative w-full h-full">
-            <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/30 to-white/90 z-10" />
+          <div className="relative w-full h-full bg-white">
+            <div className="absolute inset-0 bg-gradient-to-b from-white via-white/30 to-white z-10" />
             <video
               ref={videoRef}
               className="w-full h-full object-cover rounded-b-[80px]"
