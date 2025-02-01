@@ -19,7 +19,7 @@ export function CTA() {
               Ready to Transform Your Online Reviews?
             </h2>
             <p className="section-description text-gray-600">
-              Join hundreds of successful businesses that are already using our platform to boost their reputation and attract more customers.
+              Join local businesses in your area who are using our platform to boost their reputation and attract more customers every day.
             </p>
           </div>
         </div>
