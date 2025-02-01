@@ -41,7 +41,7 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-[#FFF8E6] rounded-t-[40px]">
+    <footer className="bg-[#FFF8E6] rounded-t-[80px]">
       <div className="mx-auto max-w-7xl px-6 py-12 md:py-16">
         {/* Newsletter Section */}
         <div className="text-center mb-12">
