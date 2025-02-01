@@ -15,7 +15,7 @@ export function CTA() {
             transition-all duration-300 
             group-hover:-translate-y-1"
           >
-            <h2 className="text-4xl sm:text-5xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600 transform group-hover:scale-105 transition-transform duration-300">
+            <h2 className="text-4xl sm:text-5xl font-bold mb-2 text-[#4285f4]">
               Ready to Transform Your Online Reviews?
             </h2>
             <p className="text-lg text-gray-600">
