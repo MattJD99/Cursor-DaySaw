@@ -69,7 +69,7 @@ export function Footer() {
         </div>
 
         {/* Dots with larger size */}
-        <div className="w-full h-12 bg-[url('/images/googlefi-dots.webp')] bg-repeat-x bg-contain" />
+        <div className="w-full h-24 bg-[url('/images/googlefi-dots.webp')] bg-repeat-x bg-[length:auto_100%]" />
 
         {/* Footer Links */}
         <div className="mt-8 flex justify-center space-x-8">
