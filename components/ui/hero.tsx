@@ -43,21 +43,20 @@ export function Hero() {
   return (
     <div className="relative isolate bg-white min-h-[120vh]">
       {/* Background section with video */}
-      <div className="absolute inset-x-0 top-0 -z-10 overflow-hidden bg-white">
-        <div className="absolute inset-0">
-          <div className="relative w-full h-[100vh] bg-white rounded-b-[80px] overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white z-10" />
-            <video
-              ref={videoRef}
-              className="w-full h-full object-contain mt-16"
-              autoPlay
-              loop
-              muted
-              playsInline
-            >
-              <source src="/images/daysaw-video.mp4" type="video/mp4" />
-            </video>
-          </div>
+      <div className="absolute inset-x-0 top-0 -z-10 h-[800px] bg-white">
+        <div className="relative w-full h-full rounded-b-[80px] overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white z-10" />
+          <video
+            ref={videoRef}
+            className="w-full h-full object-cover mt-8"
+            autoPlay
+            loop
+            muted
+            playsInline
+            style={{ objectPosition: '50% 30%' }}
+          >
+            <source src="/images/daysaw-video.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
 
