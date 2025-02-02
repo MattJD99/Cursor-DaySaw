@@ -10,7 +10,7 @@ const stats = [
 export function Stats() {
   return (
     <div className="relative isolate bg-background">
-      <div className="bg-background py-12 sm:py-16">
+      <div className="bg-background py-8 sm:py-12">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="section-title mb-4">
