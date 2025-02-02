@@ -2,43 +2,22 @@
 
 import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
-import { HeroHeadline } from './HeroHeadline';
 
 export function Hero() {
-  const typedRef = useRef(null);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const typedRef = useRef(null);
 
   useEffect(() => {
-    if (!typedRef.current) return;
-
-    const options = {
-      strings: [
-        'Reviews',
-        'Social Posts',
-        'Interactions',
-        'Free Time',
-        'Sales',
-      ],
-      typeSpeed: 40,
-      backSpeed: 40,
-      backDelay: 3500,
-      startDelay: 500,
-      loop: true,
-      showCursor: true,
-      cursorChar: '|',
-      smartBackspace: true,
-    };
-
-    const typed = new Typed(typedRef.current, options);
-
-    if (videoRef.current) {
-      videoRef.current.play();
-      videoRef.current.playbackRate = 0.75;
+    if (typedRef.current) {
+      const options = {
+        strings: ['Reviews', 'Social Posts', 'Interactions'],
+        typeSpeed: 40,
+        backSpeed: 40,
+        loop: true,
+      };
+      const typed = new Typed(typedRef.current, options);
+      return () => typed.destroy();
     }
-
-    return () => {
-      typed.destroy();
-    };
   }, []);
 
   return (
@@ -64,7 +43,7 @@ export function Hero() {
       <div className="relative z-20 text-center px-6 max-w-4xl mx-auto pt-32">
         {/* Headline - No background */}
         <h1 className="section-title mb-6">
-          Ready to Transform Your Online Reviews?
+          Grow Your <span ref={typedRef} className="gradient-text whitespace-nowrap"></span>
         </h1>
 
         {/* Subheading */}
