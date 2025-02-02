@@ -124,7 +124,9 @@ export function Features() {
           <img src="/images/feeding-america-logo.png" alt="Feeding America" className="mx-auto h-16" />
         </div>
       </div>
-      <DotsBackground />
+      <div className="relative w-full overflow-hidden bg-gradient-to-b from-white via-pink-50/50 to-white py-8">
+        <div className="w-full h-12 bg-[url('/images/googlefi-dots.webp')] bg-repeat-x bg-contain" />
+      </div>
     </div>
   );
 } 
