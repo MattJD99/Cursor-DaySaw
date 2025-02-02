@@ -64,12 +64,12 @@ export function Hero() {
       <div className="relative z-20 text-center px-6 max-w-4xl mx-auto pt-32">
         {/* Headline - No background */}
         <h1 className="section-title mb-6">
-          Let's get your reviews rolling!
+          Ready to Transform Your Online Reviews?
         </h1>
 
         {/* Subheading */}
         <h2 className="section-title mb-8">
-          We're ready to boost your business with glowing reviews!
+          Local businesses just like yours are already seeing real results — be the next success story.
         </h2>
 
         {/* Main Description - Small bubble */}
