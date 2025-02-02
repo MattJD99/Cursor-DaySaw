@@ -39,9 +39,6 @@ export function Stats() {
           </div>
         </div>
       </div>
-      <div className="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6">
-        <div className="aspect-[1200/800] w-[70rem] bg-gradient-to-tr from-blue-600 to-indigo-600 opacity-5" />
-      </div>
       <div className="w-full overflow-hidden mt-16">
         <div className="w-full h-8 bg-[url('/images/googlefi-dots.webp')] bg-repeat-x bg-contain" />
       </div>
