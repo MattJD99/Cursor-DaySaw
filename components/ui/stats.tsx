@@ -39,7 +39,7 @@ export function Stats() {
           </div>
         </div>
       </div>
-      <div className="w-full overflow-hidden mt-16">
+      <div className="w-full overflow-hidden mt-4">
         <div className="w-full h-8 bg-[url('/images/googlefi-dots.webp')] bg-repeat-x bg-contain" />
       </div>
     </div>
