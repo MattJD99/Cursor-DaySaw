@@ -2,7 +2,6 @@
 
 import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
-import { DotsBackground } from "@/components/ui/DotsBackground";
 
 export function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null);
