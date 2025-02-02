@@ -16,13 +16,8 @@ export function CTA() {
             transition-all duration-300 
             group-hover:-translate-y-1"
           >
-            <h2 className="text-4xl sm:text-5xl font-bold mb-2">
-              <span className="text-[#4285f4]">Ready</span>{" "}
-              <span className="text-[#0f9d58]">to</span>{" "}
-              <span className="text-[#f4b400]">Transform</span>{" "}
-              <span className="text-[#db4437]">Your</span>{" "}
-              <span className="text-[#4285f4]">Online</span>{" "}
-              <span className="text-[#0f9d58]">Reviews?</span>
+            <h2 className="section-title mb-2">
+              Ready to Transform Your Online Reviews?
             </h2>
             <p className="text-lg text-gray-600">
               Join local businesses in your area who are using our platform to boost their reputation and attract more customers every day.

@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
+import { HeroHeadline } from './HeroHeadline';
 
 export function Hero() {
   const typedRef = useRef(null);
@@ -62,18 +63,13 @@ export function Hero() {
 
       <div className="relative z-20 text-center px-6 max-w-4xl mx-auto pt-32">
         {/* Headline - No background */}
-        <h1 className="text-5xl sm:text-6xl font-extrabold leading-none mb-6">
-          <div className="flex items-baseline justify-center">
-            <span className="text-gray-900 whitespace-nowrap">Grow with More&nbsp;</span>
-            <div className="inline-flex items-baseline min-w-[200px] sm:min-w-[250px]">
-              <span ref={typedRef} className="gradient-text whitespace-nowrap"></span>
-            </div>
-          </div>
+        <h1 className="section-title mb-6">
+          Let's get your reviews rolling!
         </h1>
 
-        {/* Subheading - No background */}
-        <h2 className="text-3xl sm:text-4xl font-semibold text-gray-800 mb-8">
-          Automate 5-Star Reviews, Boost Your Leads, and Give Back.
+        {/* Subheading */}
+        <h2 className="section-title mb-8">
+          We're ready to boost your business with glowing reviews!
         </h2>
 
         {/* Main Description - Small bubble */}
