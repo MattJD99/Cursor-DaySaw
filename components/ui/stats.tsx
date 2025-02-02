@@ -10,7 +10,7 @@ const stats = [
 export function Stats() {
   return (
     <div className="relative isolate bg-background">
-      <div className="bg-background py-8 sm:py-12">
+      <div className="bg-background pt-0 pb-8 sm:pt-0 sm:pb-12">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="section-title mb-4">
@@ -20,7 +20,7 @@ export function Stats() {
               Google reviews are crucial for your business success. They influence your local search rankings and directly impact customer decisions.
             </p>
           </div>
-          <div className="mx-auto mt-16 grid max-w-lg grid-cols-1 items-center gap-6 sm:mt-20 sm:max-w-xl lg:mx-0 lg:max-w-none lg:grid-cols-4">
+          <div className="mx-auto mt-12 grid max-w-lg grid-cols-1 items-center gap-6 sm:mt-16 sm:max-w-xl lg:mx-0 lg:max-w-none lg:grid-cols-4">
             {stats.map((stat) => (
               <div 
                 key={stat.id}
