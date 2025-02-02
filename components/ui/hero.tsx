@@ -10,7 +10,13 @@ export function Hero() {
   useEffect(() => {
     if (typedRef.current) {
       const options = {
-        strings: ['Reviews', 'Social Posts', 'Interactions'],
+        strings: [
+          '5-Star Reviews',
+          'Social Posts',
+          'Leads',
+          'Free Time',
+          'Interactions'
+        ],
         typeSpeed: 40,
         backSpeed: 40,
         loop: true,
@@ -42,13 +48,14 @@ export function Hero() {
 
       <div className="relative z-20 text-center px-6 max-w-4xl mx-auto pt-32">
         {/* Headline - No background */}
-        <h1 className="section-title mb-6">
-          Grow Your <span ref={typedRef} className="gradient-text whitespace-nowrap"></span>
+        <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
+          <span className="text-gray-900">Grow with More</span>{" "}
+          <span ref={typedRef} className="gradient-text whitespace-nowrap"></span>
         </h1>
 
         {/* Subheading */}
-        <h2 className="section-title mb-8">
-          Local businesses just like yours are already seeing real results — be the next success story.
+        <h2 className="text-xl sm:text-2xl text-gray-700 mb-8">
+          Automate 5-Star Reviews, Boost Your Leads, and Give Back.
         </h2>
 
         {/* Main Description - Small bubble */}
