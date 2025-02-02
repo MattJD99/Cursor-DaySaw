@@ -100,14 +100,6 @@ export function Hero() {
           </div>
         </div>
       </div>
-
-      {/* Dots Background */}
-      <div className="relative">
-        <div className="absolute inset-0 bg-transparent" />
-        <div className="relative">
-          <DotsBackground className="h-12 bg-[length:auto_100%]" />
-        </div>
-      </div>
     </div>
   );
 } 

@@ -13,6 +13,7 @@ import {
   BellRing
 } from 'lucide-react';
 import Image from 'next/image';
+import { DotsBackground } from '@/components/ui/dots-background';
 
 interface Feature {
   name: string;
@@ -123,6 +124,14 @@ export function Features() {
               alt="Feeding America Logo"
               className="h-32 w-auto sm:h-40"
             />
+          </div>
+
+          {/* Dots Background */}
+          <div className="relative">
+            <div className="absolute inset-0 bg-transparent" />
+            <div className="relative">
+              <DotsBackground className="h-12 bg-[length:auto_100%]" />
+            </div>
           </div>
         </div>
       </div>
