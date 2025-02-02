@@ -122,7 +122,7 @@ export function Features() {
             <img
               src="/images/feeding-america-logo.png"
               alt="Feeding America Logo"
-              className="h-24 w-auto"
+              className="h-32 w-auto sm:h-40"
             />
           </div>
         </div>
