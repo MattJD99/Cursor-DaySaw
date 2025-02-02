@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
+import { DotsBackground } from "@/components/ui/DotsBackground";
 
 export function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -17,8 +18,10 @@ export function Hero() {
           'Free Time',
           'Interactions'
         ],
-        typeSpeed: 40,
-        backSpeed: 40,
+        typeSpeed: 50,
+        backSpeed: 50,
+        backDelay: 2000,
+        startDelay: 500,
         loop: true,
       };
       const typed = new Typed(typedRef.current, options);
@@ -54,7 +57,7 @@ export function Hero() {
         </h1>
 
         {/* Subheading */}
-        <h2 className="text-xl sm:text-2xl text-gray-700 mb-8">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-8">
           Automate 5-Star Reviews, Boost Your Leads, and Give Back.
         </h2>
 
@@ -95,6 +98,14 @@ export function Hero() {
               Get more reviews in days—or pay nothing
             </p>
           </div>
+        </div>
+      </div>
+
+      {/* Dots Background */}
+      <div className="relative">
+        <div className="absolute inset-0 bg-transparent" />
+        <div className="relative">
+          <DotsBackground className="h-12 bg-[length:auto_100%]" />
         </div>
       </div>
     </div>
