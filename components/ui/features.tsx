@@ -13,7 +13,6 @@ import {
   BellRing
 } from 'lucide-react';
 import Image from 'next/image';
-import { DotsBackground } from "@/components/ui/DotsBackground";
 
 interface Feature {
   name: string;
@@ -125,13 +124,6 @@ export function Features() {
               className="h-32 w-auto sm:h-40"
             />
           </div>
-        </div>
-      </div>
-
-      <div className="relative">
-        <div className="absolute inset-0 bg-transparent" />
-        <div className="relative">
-          <DotsBackground className="h-12 bg-[length:auto_100%]" />
         </div>
       </div>
     </div>

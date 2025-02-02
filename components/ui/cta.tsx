@@ -1,7 +1,6 @@
 'use client';
 
 import { BenefitsSection } from '@/components/ui/BenefitsSection';
-import { DotsBackground } from '@/components/ui/DotsBackground';
 
 export function CTA() {
   return (
@@ -26,10 +25,6 @@ export function CTA() {
         </div>
 
         <BenefitsSection />
-      </div>
-
-      <div className="relative">
-        <DotsBackground className="h-12 bg-[length:auto_100%]" />
       </div>
     </div>
   );
