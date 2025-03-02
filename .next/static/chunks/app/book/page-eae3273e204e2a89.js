@@ -1,0 +1,21 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[886],{1335:function(e,t,r){Promise.resolve().then(r.bind(r,2264))},2264:function(e,t,r){"use strict";r.r(t),r.d(t,{default:function(){return a}});var n=r(7437),s=r(4241);function a(){return(0,n.jsx)("div",{className:"bg-background pt-32 pb-24",children:(0,n.jsxs)("div",{className:"mx-auto max-w-7xl px-6 lg:px-8",children:[(0,n.jsxs)("div",{className:"mx-auto max-w-4xl text-center",children:[(0,n.jsx)("h1",{className:"text-base font-semibold leading-7 text-primary",children:"Book a Meeting"}),(0,n.jsx)("p",{className:"mt-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-blue-400 to-indigo-600 text-4xl font-bold tracking-tight sm:text-5xl",children:"Schedule Your Free Consultation"}),(0,n.jsx)("p",{className:"mt-6 text-lg leading-8 text-muted-foreground",children:"Choose a time that works best for you, and we'll discuss how we can help grow your business with automated reviews."})]}),(0,n.jsx)("div",{className:"mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 bg-white",children:(0,n.jsxs)("div",{className:"p-8",children:[(0,n.jsxs)("div",{className:"aspect-[4/3] rounded-2xl bg-gray-50 flex flex-col items-center justify-center text-muted-foreground",children:[(0,n.jsx)(s.Z,{className:"h-16 w-16 mb-4"}),(0,n.jsx)("p",{className:"text-lg font-medium",children:"Calendar Integration Coming Soon"}),(0,n.jsx)("p",{className:"mt-2 text-sm",children:"This is where your booking calendar will appear"})]}),(0,n.jsxs)("div",{className:"mt-8",children:[(0,n.jsx)("h3",{className:"text-lg font-semibold text-foreground",children:"Can't find a suitable time?"}),(0,n.jsx)("p",{className:"mt-2 text-muted-foreground",children:"Contact us directly and we'll find a time that works for you."}),(0,n.jsx)("div",{className:"mt-4",children:(0,n.jsx)("a",{href:"mailto:contact@daysaw.agency",className:"inline-flex items-center justify-center rounded-full bg-primary px-6 py-2 text-sm font-medium text-white shadow-sm hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary",children:"Contact Us"})})]})]})})]})})}},8030:function(e,t,r){"use strict";r.d(t,{Z:function(){return o}});var n=r(2265);/**
+ * @license lucide-react v0.446.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let s=e=>e.replace(/([a-z0-9])([A-Z])/g,"$1-$2").toLowerCase(),a=function(){for(var e=arguments.length,t=Array(e),r=0;r<e;r++)t[r]=arguments[r];return t.filter((e,t,r)=>!!e&&r.indexOf(e)===t).join(" ")};/**
+ * @license lucide-react v0.446.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */var i={xmlns:"http://www.w3.org/2000/svg",width:24,height:24,viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:2,strokeLinecap:"round",strokeLinejoin:"round"};/**
+ * @license lucide-react v0.446.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let l=(0,n.forwardRef)((e,t)=>{let{color:r="currentColor",size:s=24,strokeWidth:l=2,absoluteStrokeWidth:o,className:c="",children:d,iconNode:u,...m}=e;return(0,n.createElement)("svg",{ref:t,...i,width:s,height:s,stroke:r,strokeWidth:o?24*Number(l)/Number(s):l,className:a("lucide",c),...m},[...u.map(e=>{let[t,r]=e;return(0,n.createElement)(t,r)}),...Array.isArray(d)?d:[d]])}),o=(e,t)=>{let r=(0,n.forwardRef)((r,i)=>{let{className:o,...c}=r;return(0,n.createElement)(l,{ref:i,iconNode:t,className:a("lucide-".concat(s(e)),o),...c})});return r.displayName="".concat(e),r}},4241:function(e,t,r){"use strict";r.d(t,{Z:function(){return n}});/**
+ * @license lucide-react v0.446.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let n=(0,r(8030).Z)("Calendar",[["path",{d:"M8 2v4",key:"1cmpym"}],["path",{d:"M16 2v4",key:"4m81vk"}],["rect",{width:"18",height:"18",x:"3",y:"4",rx:"2",key:"1hopcy"}],["path",{d:"M3 10h18",key:"8toen8"}]])}},function(e){e.O(0,[971,23,744],function(){return e(e.s=1335)}),_N_E=e.O()}]);
