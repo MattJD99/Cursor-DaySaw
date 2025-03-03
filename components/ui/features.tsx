@@ -13,7 +13,7 @@ import {
   BellRing
 } from 'lucide-react';
 import Image from 'next/image';
-import { DotsBackground } from '@/components/ui/dots-background';
+import { DotsBackground } from '@/components/ui/DotsBackground';
 
 interface Feature {
   name: string;
@@ -137,4 +137,4 @@ export function Features() {
       </div>
     </div>
   );
-} 
+}
