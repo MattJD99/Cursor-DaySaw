@@ -70,8 +70,8 @@ export default function PricingPage() {
     <div className="bg-background pt-32 pb-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <h1 className="text-base font-semibold leading-7 text-primary">Pricing</h1>
-          <p className="mt-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-blue-400 to-indigo-600 text-4xl font-bold tracking-tight sm:text-5xl">
+          
+          <p className="mt-2 pb-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-blue-400 to-indigo-600 text-4xl font-bold sm:text-5xl">
             Simple, transparent pricing
           </p>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
@@ -132,4 +132,4 @@ export default function PricingPage() {
       </div>
     </div>
   );
-} 
+}

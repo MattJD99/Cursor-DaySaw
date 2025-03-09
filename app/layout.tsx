@@ -8,9 +8,27 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "DaySaw.agency - Automated Review Management",
-  description: "Automate your review collection and boost your online reputation with DaySaw.agency. Our AI-powered platform helps you get more 5-star reviews and manage your online presence.",
+  description: "Boost your business reviews, get more leads, all without lifting a finger. Automated review management that saves you time.",
   icons: {
     icon: '/images/favicon.ico',
+  },
+  openGraph: {
+    title: "DaySaw.agency - Automated Review Management",
+    description: "Boost your business reviews, get more leads, all without lifting a finger. Automated review management that saves you time.",
+    images: [
+      {
+        url: '/images/logo.png',
+        width: 800,
+        height: 600,
+        alt: 'DaySaw.agency Logo',
+      }
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "DaySaw.agency - Automated Review Management",
+    description: "Boost your business reviews, get more leads, all without lifting a finger. Automated review management that saves you time.",
+    images: ['/images/logo.png'],
   },
 };
 
@@ -23,6 +41,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <head>
         <link rel="icon" href="/images/favicon.ico" />
+        
         <link
           href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap"
           rel="stylesheet"

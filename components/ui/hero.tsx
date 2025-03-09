@@ -52,7 +52,9 @@ export function Hero() {
         {/* Headline - No background */}
         <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
           <span className="text-gray-900">Grow with More</span>{" "}
-          <span ref={typedRef} className="gradient-text whitespace-nowrap"></span>
+          <span className="block h-[1.5em] sm:h-auto">
+            <span ref={typedRef} className="gradient-text whitespace-nowrap"></span>
+          </span>
         </h1>
 
         {/* Subheading */}
@@ -101,4 +103,4 @@ export function Hero() {
       </div>
     </div>
   );
-} 
+}

@@ -35,7 +35,7 @@ export default function FeaturesPage() {
         <div className="col-span-12 sm:col-span-4 md:col-span-3">
           <div className="bg-gray-100 rounded-3xl p-6 h-full group hover:scale-[1.02] transition-all duration-300 relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-blue-400 to-indigo-600 opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
-            <div className="absolute inset-0 border-2 border-transparent group-hover:border-blue-500 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 group-hover:animate-border-flow"></div>
+            <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 group-hover:animate-border-flow"></div>
             
             <div className="flex flex-col h-full">
               <Zap className="h-10 w-10 mb-4 text-gray-800" />
@@ -52,7 +52,7 @@ export default function FeaturesPage() {
         <div className="col-span-12 sm:col-span-4 md:col-span-3">
           <div className="bg-gray-100 rounded-3xl p-6 h-full group hover:scale-[1.02] transition-all duration-300 relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-blue-400 to-indigo-600 opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
-            <div className="absolute inset-0 border-2 border-transparent group-hover:border-blue-500 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 group-hover:animate-border-flow"></div>
+            <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 group-hover:animate-border-flow"></div>
             
             <div className="flex flex-col h-full">
               <MessageSquare className="h-10 w-10 mb-4 text-gray-800" />
@@ -69,7 +69,7 @@ export default function FeaturesPage() {
         <div className="col-span-12 sm:col-span-4 md:col-span-3">
           <div className="bg-gray-100 rounded-3xl p-6 h-full group hover:scale-[1.02] transition-all duration-300 relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-blue-400 to-indigo-600 opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
-            <div className="absolute inset-0 border-2 border-transparent group-hover:border-blue-500 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 group-hover:animate-border-flow"></div>
+            <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 group-hover:animate-border-flow"></div>
             
             <div className="flex flex-col h-full">
               <Bot className="h-10 w-10 mb-4 text-gray-800" />
@@ -86,7 +86,7 @@ export default function FeaturesPage() {
         <div className="col-span-12 sm:col-span-12 md:col-span-3">
           <div className="bg-gray-100 rounded-3xl p-6 h-full group hover:scale-[1.02] transition-all duration-300 relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-blue-400 to-indigo-600 opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
-            <div className="absolute inset-0 border-2 border-transparent group-hover:border-blue-500 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 group-hover:animate-border-flow"></div>
+            <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 group-hover:animate-border-flow"></div>
             
             <div className="flex flex-col h-full">
               <Heart className="h-10 w-10 mb-4 text-gray-800" />
@@ -103,7 +103,7 @@ export default function FeaturesPage() {
         <div className="col-span-12 sm:col-span-6 md:col-span-6">
           <div className="bg-gray-100 rounded-3xl p-6 h-full group hover:scale-[1.02] transition-all duration-300 relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-blue-400 to-indigo-600 opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
-            <div className="absolute inset-0 border-2 border-transparent group-hover:border-blue-500 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 group-hover:animate-border-flow"></div>
+            <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 group-hover:animate-border-flow"></div>
             
             <div className="flex flex-col h-full">
               <Users className="h-10 w-10 mb-4 text-gray-800" />
@@ -116,21 +116,26 @@ export default function FeaturesPage() {
           </div>
         </div>
 
-        {/* Central Feature - DaySaw Logo */}
+       {/* Central Feature - DaySaw Logo */}
         <div className="col-span-12 md:col-span-6 row-span-2">
-          <div className="bg-gray-900 rounded-3xl p-8 h-full flex items-center justify-center group hover:scale-[1.02] transition-all duration-300 relative overflow-hidden">
-            <div className="absolute inset-0 border-2 border-transparent group-hover:border-blue-500 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 group-hover:animate-border-flow"></div>
+          <div className="bg-white rounded-3xl p-8 h-full flex items-center justify-center group hover:scale-[1.02] transition-all duration-300 relative overflow-hidden">
+            <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 group-hover:animate-border-flow"></div>
             
             <div className="text-center">
               <div className="mb-4 flex justify-center">
-                <img 
-                  src="/images/logo.png" 
+                <Image 
+                  src="/images/daysaw-logo-black-transp.png" 
                   alt="DaySaw Logo" 
-                  className="h-32 w-auto"
+                  width={200}
+                  height={100}
+                  className="max-h-32 w-auto object-contain"
                 />
               </div>
-              <h2 className="text-white text-3xl font-bold mb-2">DaySaw</h2>
-              <p className="text-gradient text-xl font-semibold">Review Automation</p>
+              <h2 className="text-3xl font-bold mb-2">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-blue-400 to-indigo-600 animate-gradient-flow">
+                  Review Automation
+                </span>
+              </h2>
             </div>
           </div>
         </div>
@@ -139,7 +144,7 @@ export default function FeaturesPage() {
         <div className="col-span-12 sm:col-span-6 md:col-span-6">
           <div className="bg-gray-100 rounded-3xl p-6 h-full group hover:scale-[1.02] transition-all duration-300 relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-blue-400 to-indigo-600 opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
-            <div className="absolute inset-0 border-2 border-transparent group-hover:border-blue-500 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 group-hover:animate-border-flow"></div>
+            <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 group-hover:animate-border-flow"></div>
             
             <div className="flex flex-col h-full">
               <Repeat className="h-10 w-10 mb-4 text-gray-800" />
@@ -156,7 +161,7 @@ export default function FeaturesPage() {
         <div className="col-span-12 sm:col-span-4 md:col-span-4">
           <div className="bg-gray-100 rounded-3xl p-6 h-full group hover:scale-[1.02] transition-all duration-300 relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-blue-400 to-indigo-600 opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
-            <div className="absolute inset-0 border-2 border-transparent group-hover:border-blue-500 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 group-hover:animate-border-flow"></div>
+            <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 group-hover:animate-border-flow"></div>
             
             <div className="flex flex-col h-full">
               <Calendar className="h-10 w-10 mb-4 text-gray-800" />
@@ -173,7 +178,7 @@ export default function FeaturesPage() {
         <div className="col-span-12 sm:col-span-4 md:col-span-4">
           <div className="bg-gray-100 rounded-3xl p-6 h-full group hover:scale-[1.02] transition-all duration-300 relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-blue-400 to-indigo-600 opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
-            <div className="absolute inset-0 border-2 border-transparent group-hover:border-blue-500 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 group-hover:animate-border-flow"></div>
+            <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 group-hover:animate-border-flow"></div>
             
             <div className="flex flex-col h-full">
               <LineChart className="h-10 w-10 mb-4 text-gray-800" />
@@ -190,7 +195,7 @@ export default function FeaturesPage() {
         <div className="col-span-12 sm:col-span-4 md:col-span-4">
           <div className="bg-gray-100 rounded-3xl p-6 h-full group hover:scale-[1.02] transition-all duration-300 relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-blue-400 to-indigo-600 opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
-            <div className="absolute inset-0 border-2 border-transparent group-hover:border-blue-500 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 group-hover:animate-border-flow"></div>
+            <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 group-hover:animate-border-flow"></div>
             
             <div className="flex flex-col h-full">
               <BarChart className="h-10 w-10 mb-4 text-gray-800" />
