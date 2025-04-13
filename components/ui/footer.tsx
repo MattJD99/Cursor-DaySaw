@@ -33,12 +33,7 @@ const navigation = {
 };
 
 export function Footer() {
-  const [email, setEmail] = useState('');
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle email subscription
-  };
+  // GHL form is now handling email submission
 
   return (
     <footer className="bg-[#FFF8E6] rounded-t-[80px]">
@@ -49,23 +44,29 @@ export function Footer() {
           <p className="text-[14px] leading-[20px] text-[#5f6368] mb-8">
             Let us help get you some reviews and grow online today.
           </p>
-          <form onSubmit={handleSubmit} className="max-w-md mx-auto flex gap-3">
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter your email"
-              className="flex-1 rounded-full px-6 py-3 text-[14px] leading-[20px] bg-white border-0 shadow-sm ring-1 ring-inset ring-[#dadce0] placeholder:text-[#5f6368] focus:ring-2 focus:ring-inset focus:ring-[#1a73e8]"
-              required
-            />
-            <button
-              type="submit"
-              className="relative rounded-full px-6 py-3 overflow-hidden group bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white shadow-lg shadow-blue-500/30 transition-all duration-300"
-            >
-              <span className="relative text-[14px] leading-[20px] font-medium z-10">Subscribe</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </button>
-          </form>
+          <div className="max-w-md mx-auto">
+            <div className="ghl-form-container" style={{ position: 'relative', width: '100%', height: '100px' }}>
+              <iframe
+                src="https://api.leadconnectorhq.com/widget/form/4GgEbS9rI61Q0FNTWfsQ"
+                style={{ width: '100%', height: '100%', border: 'none', borderRadius: '0' }}
+                id="inline-4GgEbS9rI61Q0FNTWfsQ" 
+                data-layout="{'id':'INLINE'}"
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="Website simple email form"
+                data-height="432"
+                data-layout-iframe-id="inline-4GgEbS9rI61Q0FNTWfsQ"
+                data-form-id="4GgEbS9rI61Q0FNTWfsQ"
+                title="Website simple email form"
+              >
+              </iframe>
+              <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+            </div>
+          </div>
         </div>
 
         {/* Dots with gradient background */}
@@ -79,9 +80,9 @@ export function Footer() {
           <Link href="/features" className="text-[12px] leading-[16px] text-[#5f6368] hover:text-[#202124]">Features</Link>
           <Link href="/contact" className="text-[12px] leading-[16px] text-[#5f6368] hover:text-[#202124]">Contact</Link>
           <Link href="/privacy" className="text-[12px] leading-[16px] text-[#5f6368] hover:text-[#202124]">Privacy Policy</Link>
-          <Link href="/terms" className="text-[12px] leading-[16px] text-[#5f6368] hover:text-[#202124]">Terms of Service</Link>
+          <Link href="/terms" className="text-[12px] leading-[16px] text-[#5f6368] hover:text-[#202124]">Terms & Conditions</Link>
         </div>
       </div>
     </footer>
   );
-} 
+}

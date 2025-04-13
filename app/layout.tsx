@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { Navbar } from '@/components/ui/navbar';
 import { Footer } from '@/components/ui/footer';
 import "./globals.css";
+import "./ghl-form-styles.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

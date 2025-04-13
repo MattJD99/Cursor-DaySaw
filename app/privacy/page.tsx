@@ -1,78 +1,80 @@
-export default function PrivacyPolicy() {
+import React from 'react';
+
+export default function PrivacyPolicyPage() {
   return (
-    <div className="bg-background py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl">
-          <h1 className="text-4xl font-bold tracking-tight text-foreground mb-8">
-            Privacy Policy
-          </h1>
-          
-          <div className="text-sm text-muted-foreground mb-12">
-            LAST UPDATED September 5th, 2024
-          </div>
+    <main className="container mx-auto py-8 px-4 pt-24">
+      <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
+      <p className="text-sm mb-4">LAST UPDATED: March 11, 2025</p>
 
-          <div className="prose prose-gray max-w-none">
-            <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
-            <p className="mb-8">
-              This page ("Privacy Policy" or "Policy") provides our policies and procedures for collecting, using and
-              disclosing your information and outlines the security measures we've put in place to protect the
-              information that you store using DaySaw.agency's ("DaySaw.agency") services, including the
-              services made available through this web site, and any other software or services offered by DaySaw.agency
-              in connection with such services (the "Services"). By using these Services, you consent to the
-              collection, transfer, processing, storage, disclosure and other uses of your information described in this
-              Privacy Policy.
-            </p>
+      <section className="mb-6">
+        <h2 className="text-xl font-semibold mb-2">1. Introduction</h2>
+        <p>DaySaw.agency ("we," "our," "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and protect your personal data when you use our website and services (collectively, the "Services"). By using our Services, you consent to the data practices described in this policy.</p>
+      </section>
 
-            <h2 className="text-2xl font-semibold mb-4">What information does DaySaw.agency collect and store?</h2>
-            
-            <h3 className="text-xl font-semibold mb-4">Personal Information</h3>
-            <p className="mb-8">
-              When expressing an interest in obtaining additional information about the Services or registering to use
-              the Services, DaySaw.agency requires you to provide your personal contact information, such as your
-              name, company name, address, phone number, and email address (these are referred to below as your
-              "Personal Contact Information"). When purchasing the Services, DaySaw.agency also requires you to
-              provide financial and billing information, such as billing name and address, credit card number, and the
-              number of employees within the organization that will be using the Services ("Billing Information").
-            </p>
+      <section className="mb-6">
+        <h2 className="text-xl font-semibold mb-2">2. Information We Collect</h2>
+        <p>We collect various types of information to provide and improve our Services:</p>
+        <ul className="list-disc list-inside ml-6">
+            <li><strong>Personal Information:</strong> When you sign up, request information, or purchase our Services, we collect personal details such as your name, company name, email, phone number, and billing details.</li>
+            <li><strong>Service Data:</strong> We collect content you upload, including emails, logos, descriptions, and user data within our CRM system.</li>
+            <li><strong>Technical & Diagnostic Information:</strong> We may collect system logs, error reports, and other data for troubleshooting purposes.</li>
+            <li><strong>Website Analytics:</strong> We use cookies and tracking technologies to collect information about your browser, IP address, pages visited, and actions taken on our website.</li>
+            <li><strong>Geo-Location Data:</strong> We do not currently track real-time location but may request permission if this feature is introduced in the future.</li>
+        </ul>
+      </section>
 
-            <h3 className="text-xl font-semibold mb-4">Data, Diagnostic & Login Information</h3>
-            <p className="mb-8">
-              Using DaySaw.agency's Services, you will be able to create, upload, store and share information such as
-              company description, email ID, logo, photos, custom emails, user email IDs, etc. (this is collectively
-              referred to below as "Data"). This information will be stored and maintained on DaySaw.agency's web
-              site. If you run into technical errors in the course of using the Services, DaySaw.agency may request your
-              permission to obtain a crash report along with certain logging information from your system documenting
-              the error ("Diagnostic Information"). Additionally, certain login information is maintained in a cookie
-              stored locally on your computer (i.e. not on a server) in order to streamline the login process ("Login
-              Information").
-            </p>
+      <section className="mb-6">
+        <h2 className="text-xl font-semibold mb-2">3. How We Use Your Information</h2>
+        <p>We use collected information to:</p>
+        <ul className="list-disc list-inside ml-6">
+            <li>Provide and enhance our Services.</li>
+            <li>Process transactions and send invoices.</li>
+            <li>Improve customer support and troubleshoot issues.</li>
+            <li>Send marketing emails and promotional materials (with an opt-out option).</li>
+            <li>Comply with legal obligations.</li>
+        </ul>
+      </section>
 
-            <h3 className="text-xl font-semibold mb-4">Analytics Information</h3>
-            <p className="mb-8">
-              As you navigate DaySaw.agency's website and use our Services, DaySaw.agency may also collect
-              information through the use of frequently used information-gathering tools, such as cookies and Web
-              beacons ("Website Navigational Information"). Website Navigational Information includes standard
-              information from your web browser (such as browser type and browser language), your Internet Protocol
-              ("IP") address, and the actions you take on DaySaw.agency's website (such as the web pages viewed
-              and links clicked).
-            </p>
+      <section className="mb-6">
+        <h2 className="text-xl font-semibold mb-2">4. Data Sharing & Disclosure</h2>
+        <p>We do not sell or rent your personal data. However, we may share it with:</p>
+          <ul className="list-disc list-inside ml-6">
+            <li><strong>Third-Party Service Providers:</strong> For payment processing, email delivery, analytics, and security.</li>
+            <li><strong>Legal Compliance:</strong> If required by law, court order, or to prevent fraud or security threats.</li>
+            <li><strong>Business Transfers:</strong> If we undergo a merger, acquisition, or asset sale, your data may be transferred.</li>
+          </ul>
+      </section>
 
-            <h3 className="text-xl font-semibold mb-4">Geo-Location Information</h3>
-            <p className="mb-8">
-              DaySaw.agency does not collect any information regarding your real-time geo-location while using
-              the Services; however, it may do so at some point in the future. We will request your permission before
-              collecting such information.
-            </p>
+      <section className="mb-6">
+        <h2 className="text-xl font-semibold mb-2">5. Data Security</h2>
+        <p>We implement industry-standard security measures to protect your data. However, no method of transmission over the internet is 100% secure. You are responsible for safeguarding account credentials.</p>
+      </section>
 
-            <h2 className="text-2xl font-semibold mb-4">What does DaySaw.agency do with the information it collects?</h2>
-            <p className="mb-8">
-              DaySaw.agency uses the information it collects primarily to administer our Services to you and
-              provide you with updates and product announcements. Per the Privacy and Conditions, we may use your
-              contact information to send you promotional emails about our Services or respond to your questions.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+      <section className="mb-6">
+        <h2 className="text-xl font-semibold mb-2">6. Your Rights & Choices</h2>
+        <p>You have the right to:</p>
+        <ul className="list-disc list-inside ml-6">
+          <li>Request access to or deletion of your data.</li>
+          <li>Opt out of marketing communications.</li>
+          <li>Update or correct your information.</li>
+        </ul>
+      </section>
+
+      <section className="mb-6">
+        <h2 className="text-xl font-semibold mb-2">7. Cookies & Tracking Technologies</h2>
+        <p>We use cookies and similar technologies for analytics and functionality. You can manage cookie settings through your browser.</p>
+      </section>
+
+      <section className="mb-6">
+        <h2 className="text-xl font-semibold mb-2">8. Changes to This Policy</h2>
+        <p>We may update this policy periodically. Any significant changes will be notified via email or a website notice. Continued use of our Services indicates acceptance of the updated policy.</p>
+      </section>
+
+      <section className="mb-6">
+        <h2 className="text-xl font-semibold mb-2">9. Contact Information</h2>
+        <p>For questions or data requests, contact us at: <a href="mailto:contactus@daysaw.agency">contactus@daysaw.agency</a>.</p>
+      </section>
+
+    </main>
   );
-} 
+}

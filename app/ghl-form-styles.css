@@ -1,0 +1,192 @@
+/* GHL Form Custom Styling - Replicating Perfect Case */
+
+/* Target the GHL form container on the main page */
+.ghl-form-container {
+  position: relative;
+  width: 100%;
+  height: 100px !important; /* Original height */
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
+
+/* Style the iframe itself */
+#inline-4GgEbS9rI61Q0FNTWfsQ {
+  width: 100%;
+  height: 100%;
+  border: none !important;
+  border-radius: 0 !important; 
+  overflow: hidden !important;
+}
+
+/* 
+ * Custom CSS to be added to the GHL form builder 
+ * Copy the CSS below into the Custom CSS section of your GHL form builder
+ */
+
+/* Overall form wrapper inside iframe */
+.ghl-form-wrap {
+  font-family: 'Google Sans', sans-serif !important;
+  max-width: 100% !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important; 
+  gap: 12px !important; /* Match gap-3 equivalent */
+  background-color: #FFF8E6 !important;
+  padding: 10px !important; 
+  margin: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  box-sizing: border-box !important;
+  height: auto !important; 
+  min-height: 60px !important; 
+}
+
+/* Inner form builder wrapper */
+.form-builder--wrap {
+  background-color: #FFF8E6 !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100% !important; 
+  display: flex !important; 
+  align-items: center !important; 
+  box-sizing: border-box !important;
+}
+
+/* Ensure consistent background and no extra spacing/borders */
+#_builder-form, 
+.form-builder--wrap-full,
+.hl_form-builder--main-full,
+.hl_form_builder--main,
+#form-builder,
+.hl_wrapper--inner-full,
+.hl_wrapper--inner,
+.hl-app,
+.form-builder--item,
+.form-field-container,
+.builder-inline.fields-container.row {
+  background-color: #FFF8E6 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  box-sizing: border-box !important;
+}
+
+/* Email field container */
+.menu-field-wrap {
+  flex-grow: 1 !important; /* Let flexbox handle sizing based on input width */
+  flex-shrink: 1 !important;
+  flex-basis: auto !important; /* Allow natural sizing */
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  min-width: 0; 
+}
+
+/* Email input - Replicating perfect case */
+.form-control[type="email"],
+input[type="email"],
+input[name="email"] {
+  border-radius: 9999px !important; /* rounded-full */
+  padding: 0.75rem 1.5rem !important; /* px-6 py-3 */
+  font-size: 14px !important;
+  line-height: 20px !important;
+  background-color: white !important;
+  border: 1px solid #dadce0 !important; /* ring-1 ring-[#dadce0] */
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important; /* shadow-sm */
+  outline: none !important; 
+  color: #202124 !important;
+  width: 100% !important;
+  height: 46px !important; /* Match button height */
+  box-sizing: border-box !important; 
+}
+
+.form-control[type="email"]::placeholder,
+input[type="email"]::placeholder,
+input[name="email"]::placeholder {
+  color: #5f6368 !important; /* placeholder:text-[#5f6368] */
+}
+
+.form-control[type="email"]:focus,
+input[type="email"]:focus,
+input[name="email"]:focus {
+  border-color: #1a73e8 !important; /* focus:ring-[#1a73e8] */
+  box-shadow: 0 0 0 1px #1a73e8 !important; /* focus:ring-2 equivalent */
+}
+
+/* Button container */
+.form-builder--btn-submit {
+  margin: 0 !important;
+  padding: 0 !important;
+  flex-grow: 0 !important; /* Don't allow button container to grow */
+  flex-shrink: 0 !important; /* Don't allow button container to shrink */
+  flex-basis: auto !important; /* Size based on button content */
+  display: flex !important; 
+  justify-content: center !important; 
+  box-sizing: border-box !important;
+}
+
+/* Submit button - Replicating perfect case */
+.button-element,
+button[type="submit"] {
+  border-radius: 9999px !important; /* rounded-full */
+  padding: 0.75rem 1.5rem !important; /* px-6 py-3 */
+  font-size: 14px !important;
+  line-height: 20px !important;
+  font-weight: 500 !important;
+  background: linear-gradient(to right, #2563eb, #4f46e5) !important; /* from-blue-600 to-indigo-600 */
+  color: white !important;
+  border: none !important;
+  box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.3) !important; /* shadow-lg shadow-blue-500/30 */
+  transition: all 0.3s ease !important; /* transition-all duration-300 */
+  position: relative !important;
+  overflow: hidden !important;
+  height: 46px !important; /* Match input height */
+  white-space: nowrap !important;
+  width: auto !important; 
+  cursor: pointer !important;
+  box-sizing: border-box !important; 
+}
+
+/* Replicating hover effect with pseudo-element */
+.button-element::after,
+button[type="submit"]::after {
+  content: '' !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(to right, #4f46e5, #2563eb) !important; /* from-indigo-600 to-blue-600 */
+  opacity: 0 !important;
+  transition: opacity 0.3s ease !important; /* transition-opacity duration-300 */
+  z-index: 1 !important;
+}
+
+.button-element:hover::after,
+button[type="submit"]:hover::after {
+  opacity: 1 !important; /* group-hover:opacity-100 */
+}
+
+/* Ensure button text is above pseudo-element */
+.button-element div[data-v-46d7fa5a] p, 
+button[type="submit"] span { /* Adjust selector if needed */
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+
+/* Hide form title and labels */
+label.label-alignment {
+  display: none !important;
+}
+
+/* Adjust the layout for the form fields */
+.builder-inline.fields-container.row {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  width: 100% !important; 
+  box-sizing: border-box !important;
+}
