@@ -25,6 +25,7 @@
     "react-dom": "latest"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.8",
     "@tailwindcss/typography": "^0.5.16",
     "@types/node": "^22.15.24",
     "@types/react": "latest",
