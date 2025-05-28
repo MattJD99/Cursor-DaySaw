@@ -1,1 +1,1 @@
-{"type": "module"}
+{"type":"module","dependencies":{"@vercel/analytics":"^1.5.0"}}
