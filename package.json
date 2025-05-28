@@ -25,8 +25,12 @@
     "react-dom": "latest"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16",
     "@types/node": "^22.15.24",
     "@types/react": "latest",
+    "@types/tailwindcss": "^3.0.11",
+    "autoprefixer": "^10.4.21",
+    "tailwindcss": "^4.1.8",
     "typescript": "latest"
   }
 }
