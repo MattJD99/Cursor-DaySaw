@@ -1,13 +1,39 @@
 'use client';
 
 import Script from 'next/script';
+import { useEffect, useRef } from 'react';
 
 export default function GhlFormEmbed() {
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+
+  useEffect(() => {
+    const iframe = iframeRef.current;
+    if (!iframe) return;
+
+    // Function to enforce width attribute
+    const enforceWidthAttribute = () => {
+      if (iframe.getAttribute('width') !== '100%') {
+        iframe.setAttribute('width', '100%');
+      }
+    };
+
+    // Initial enforcement
+    enforceWidthAttribute();
+
+    // Periodically enforce the width attribute
+    const intervalId = setInterval(enforceWidthAttribute, 100); // Check every 100ms
+
+    return () => {
+      clearInterval(intervalId); // Clean up interval
+    };
+  }, []); // Run once on mount
+
   return (
     <div className="ghl-form-container" style={{ position: 'relative', width: '100%' }}>
       <iframe
+        ref={iframeRef}
         src="https://api.leadconnectorhq.com/widget/form/NSWE2pUVpGhgg3dRLGHi"
-        style={{ width: '100%', height: '100%', border: 'none', borderRadius: '3px' }}
+        style={{ height: '100%', border: 'none', borderRadius: '3px' }}
         id="inline-NSWE2pUVpGhgg3dRLGHi"
         data-layout='{"id":"INLINE"}'
         data-trigger-type="alwaysShow"

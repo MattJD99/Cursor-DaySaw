@@ -8,11 +8,10 @@ import { DotsBackground } from "@/components/ui/DotsBackground";
 
 const navigation = {
   main: [
-    { name: "About", href: "#" },
     { name: "Features", href: "#features" },
     { name: "Contact", href: "#contact" },
     { name: "Privacy Policy", href: "/privacy" },
-    { name: "Terms of Service", href: "/terms" },
+    { name: "Terms and Conditions", href: "/terms" },
   ],
   social: [
     {
@@ -50,7 +49,7 @@ const GhlFormEmbed = dynamic(() => import('@/components/ui/GhlFormEmbed'), {
           <p className="text-[14px] leading-[20px] text-[#5f6368] mb-8">
             Let us help get you some reviews and grow online today.
           </p>
-          <div className="max-w-md mx-auto">
+          <div className="max-w-xl mx-auto">
             <GhlFormEmbed />
           </div>
         </div>

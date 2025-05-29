@@ -248,3 +248,8 @@
     background-position: 0% 50%;
   }
 }
+
+/* Custom CSS for GHL Form iframe width */
+#inline-NSWE2pUVpGhgg3dRLGHi {
+  width: 100% !important;
+}
