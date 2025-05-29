@@ -13,6 +13,5 @@ export default function Home() {
       <Features />
       <Cta />
     </main>
-    // Vercel deployment trigger
   );
 }
