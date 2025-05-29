@@ -2,7 +2,7 @@
 
 import { BenefitsSection } from '@/components/ui/BenefitsSection';
 
-export function CTA() {
+export function Cta() {
   return (
     <div id="contact" className="relative isolate">
       <div className="mx-auto max-w-7xl px-6 py-12 sm:py-16 lg:px-8">

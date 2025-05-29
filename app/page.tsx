@@ -3,7 +3,7 @@
 import { Hero } from '@/components/ui/hero';
 import { Features } from '@/components/ui/features';
 import { Stats } from '@/components/ui/stats';
-import { CTA } from '@/components/ui/cta'; // Ensure no hidden characters or extra quotes here
+import { Cta } from '@/components/ui/cta'; // Corrected casing for import
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       <Hero />
       <Stats />
       <Features />
-      <CTA />
+      <Cta />
     </main>
   );
 }
