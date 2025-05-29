@@ -18,14 +18,23 @@ export function CTA() {
             <h2 className="section-title mb-2">
               Ready to Transform Your Online Reviews?
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-600 mb-8"> {/* Added margin-bottom */}
               Join local businesses in your area who are using our platform to boost their reputation and attract more customers every day.
             </p>
+            {/* Added CTA Buttons */}
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a href="/book" className="btn-primary text-base px-8 py-3">
+                Start Your 14-Day Trial
+              </a>
+              <a href="/book" className="btn-secondary text-base px-8 py-3">
+                Book a Demo
+              </a>
+            </div>
           </div>
         </div>
 
-        <BenefitsSection />
+        <BenefitsSection /> {/* Keep the benefits section */}
       </div>
     </div>
   );
-} 
+}

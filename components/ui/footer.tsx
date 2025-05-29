@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import dynamic from 'next/dynamic';
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 import Link from "next/link";
 import { DotsBackground } from "@/components/ui/DotsBackground";
@@ -35,6 +36,11 @@ const navigation = {
 export function Footer() {
   // GHL form is now handling email submission
 
+const GhlFormEmbed = dynamic(() => import('@/components/ui/GhlFormEmbed'), {
+  ssr: false,
+  loading: () => <div style={{ height: '100px', width: '100%', backgroundColor: '#f0f0f0' }} />, // Optional loading state
+});
+
   return (
     <footer className="bg-[#FFF8E6] rounded-t-[80px]">
       <div className="mx-auto max-w-7xl px-6 py-12 md:py-16">
@@ -45,27 +51,7 @@ export function Footer() {
             Let us help get you some reviews and grow online today.
           </p>
           <div className="max-w-md mx-auto">
-            <div className="ghl-form-container" style={{ position: 'relative', width: '100%', height: '100px' }}>
-              <iframe
-                src="https://api.leadconnectorhq.com/widget/form/4GgEbS9rI61Q0FNTWfsQ"
-                style={{ width: '100%', height: '100%', border: 'none', borderRadius: '0' }}
-                id="inline-4GgEbS9rI61Q0FNTWfsQ" 
-                data-layout="{'id':'INLINE'}"
-                data-trigger-type="alwaysShow"
-                data-trigger-value=""
-                data-activation-type="alwaysActivated"
-                data-activation-value=""
-                data-deactivation-type="neverDeactivate"
-                data-deactivation-value=""
-                data-form-name="Website simple email form"
-                data-height="432"
-                data-layout-iframe-id="inline-4GgEbS9rI61Q0FNTWfsQ"
-                data-form-id="4GgEbS9rI61Q0FNTWfsQ"
-                title="Website simple email form"
-              >
-              </iframe>
-              <script src="https://link.msgsndr.com/js/form_embed.js"></script>
-            </div>
+            <GhlFormEmbed />
           </div>
         </div>
 
@@ -74,14 +60,39 @@ export function Footer() {
           <DotsBackground className="w-full h-12" />
         </div>
 
-        {/* Footer Links */}
-        <div className="mt-8 flex justify-center space-x-8">
-          <Link href="/about" className="text-[12px] leading-[16px] text-[#5f6368] hover:text-[#202124]">About</Link>
-          <Link href="/features" className="text-[12px] leading-[16px] text-[#5f6368] hover:text-[#202124]">Features</Link>
-          <Link href="/contact" className="text-[12px] leading-[16px] text-[#5f6368] hover:text-[#202124]">Contact</Link>
-          <Link href="/privacy" className="text-[12px] leading-[16px] text-[#5f6368] hover:text-[#202124]">Privacy Policy</Link>
-          <Link href="/terms" className="text-[12px] leading-[16px] text-[#5f6368] hover:text-[#202124]">Terms & Conditions</Link>
+        {/* Logo, Description, Social Links */}
+        <div className="mt-12 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between">
+          <div className="flex flex-col items-center md:items-start md:flex-1">
+             {/* Assuming logo path is correct */}
+            <img className="h-8 w-auto mb-4" src="/images/daysaw-logo-black-transp.png" alt="DaySaw Agency" />
+            <p className="text-xs leading-5 text-gray-500 max-w-xs text-center md:text-left">
+              DaySaw helps businesses automate their review management process while making a positive impact through charitable giving.
+            </p>
+          </div>
+          <div className="mt-8 md:mt-0 flex justify-center space-x-6 md:order-last">
+            {navigation.social.map((item) => (
+              <a key={item.name} href={item.href} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-500">
+                <span className="sr-only">{item.name}</span>
+                <item.icon className="h-6 w-6" aria-hidden="true" />
+              </a>
+            ))}
+          </div>
         </div>
+
+        {/* Footer Links & Copyright */}
+        <div className="mt-8 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between">
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 md:order-2">
+            {navigation.main.map((item) => (
+               <Link key={item.name} href={item.href} className="text-[12px] leading-[16px] text-[#5f6368] hover:text-[#202124]">
+                 {item.name}
+               </Link>
+            ))}
+          </div>
+          <p className="mt-8 text-xs leading-5 text-gray-500 md:order-1 md:mt-0">
+            &copy; {new Date().getFullYear()} DaySaw.agency. All rights reserved.
+          </p>
+        </div>
+
       </div>
     </footer>
   );

@@ -10,6 +10,56 @@
   }
 }
 
+.sparkle-text {
+  animation: sparkle 2s infinite;
+  display: inline-block; /* Ensures the animation applies correctly */
+  font-weight: 600; /* Make it a bit bolder */
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    color: #1e3a8a; /* Darker blue base color */
+    text-shadow: 
+      -1px -1px 0 #fff,  
+       1px -1px 0 #fff,
+      -1px  1px 0 #fff,
+       1px  1px 0 #fff, /* White outline */
+      0 0 8px #60a5fa, 
+      0 0 12px #3b82f6; /* Blue glow */
+  }
+  50% {
+    color: #2563eb; /* Brighter blue for sparkle */
+    text-shadow: 
+      -1px -1px 0 #f0f9ff,  
+       1px -1px 0 #f0f9ff,
+      -1px  1px 0 #f0f9ff,
+       1px  1px 0 #f0f9ff, /* Lighter outline for sparkle */
+      0 0 10px #93c5fd, 
+      0 0 15px #60a5fa,
+      0 0 20px #3b82f6; /* Enhanced blue glow */
+  }
+}
+
+/* Styles for "How It Works" scroll animation */
+.how-it-works-step {
+  opacity: 0;
+  transform: translateX(-30px); /* Start off-screen to the left */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.how-it-works-step.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Stagger the animation for each step */
+.how-it-works-step:nth-child(1).is-visible { transition-delay: 0.1s; }
+.how-it-works-step:nth-child(2).is-visible { transition-delay: 0.2s; }
+.how-it-works-step:nth-child(3).is-visible { transition-delay: 0.3s; }
+.how-it-works-step:nth-child(4).is-visible { transition-delay: 0.4s; }
+.how-it-works-step:nth-child(5).is-visible { transition-delay: 0.5s; }
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;

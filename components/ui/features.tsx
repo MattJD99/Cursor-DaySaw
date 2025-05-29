@@ -43,11 +43,6 @@ const features: Feature[] = [
     icon: LayoutGrid,
   },
   {
-    name: 'Smart Scheduling',
-    description: 'Automatically schedule review requests at the perfect time.',
-    icon: Calendar,
-  },
-  {
     name: 'CRM Integration',
     description: 'Seamlessly integrate with your existing CRM systems like Jobber, QuickBooks, and Calendly for automated review collection.',
     icon: Repeat,
@@ -108,6 +103,8 @@ export function Features() {
             ))}
           </div>
         </div>
+
+
 
         <div className="text-center mt-24">
           <h2 className="text-4xl sm:text-5xl font-bold text-center mb-6">
