@@ -11,7 +11,7 @@ export default function Home() {
       <Hero />
       <Stats />
       <Features />
-      <CTA />
+      <Cta />
     </main>
     // Vercel deployment trigger
   );
