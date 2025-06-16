@@ -42,7 +42,7 @@ export function HeroHomepage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          DaySaw.agency provides your business with a dedicated assistant to manage your reputation, capture leads, and book appointments, all on autopilot.
+          DaySaw.agency provides your business with a dedicated employee to manage your Google reviews, capture leads, and book appointments, all on autopilot.
         </motion.p>
 
         {/* "Employee" Introduction */}
@@ -56,11 +56,11 @@ export function HeroHomepage() {
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
               <li className="flex items-start">
                 <span className="mr-2 mt-1">✓</span>
-                <span>Instantly answer every Facebook message, Instagram DM, website chat, and text</span>
+                <span>Instantly answer every phone call, text, Facebook message, Instagram DM, and website chat</span>
               </li>
             <li className="flex items-start">
               <span className="mr-2 mt-1">✓</span>
-              <span>Answer phone calls and book appointments directly into your calendar</span>
+              <span>Book appointments directly into your calendar from phone calls, text, social media, and website visitors</span>
             </li>
               <li className="flex items-start">
                 <span className="mr-2 mt-1">✓</span>
