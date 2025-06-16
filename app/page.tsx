@@ -1,17 +1,12 @@
-'use client';
-
-import { Hero } from '@/components/ui/hero';
-import { Features } from '@/components/ui/features';
-import { Stats } from '@/components/ui/stats';
-import { Cta } from '@/components/ui/cta';
+import { HeroHomepage } from '@/components/ui/HeroHomepage';
+import { HomepageFAQ } from '@/components/ui/HomepageFAQ';
+import { generalFAQs } from '@/lib/faqs';
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <Hero />
-      <Stats />
-      <Features />
-      <Cta />
+    <main>
+      <HeroHomepage />
+      <HomepageFAQ faqs={generalFAQs.slice(0, 5)} />
     </main>
   );
 }

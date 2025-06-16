@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Navbar } from '@/components/ui/navbar';
 import { Footer } from '@/components/ui/footer';
+import ChatWidget from '@/components/ui/ChatWidget';
 import "./globals.css";
 import "./ghl-form-styles.css";
 
@@ -70,8 +71,9 @@ export default function RootLayout({
       </head>
       <body className="font-['Google_Sans']">
         <Navbar />
-        <main>{children}</main>
+        <main className="pt-16">{children}</main>
         <Footer />
+        <ChatWidget />
       </body>
     </html>
   );
