@@ -40,7 +40,7 @@ export default function PackageShowcase() {
   return (
     <div className="py-16 bg-gray-50">
       <div className="container">
-        <h2 className="text-3xl font-bold text-center mb-12">How We Can Boost Your Business</h2>
+        <h2 className="text-3xl font-bold text-center mb-12"><span className="gradient-text">How We Can Boost Your Business</span></h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {packages.map((pkg, index) => (

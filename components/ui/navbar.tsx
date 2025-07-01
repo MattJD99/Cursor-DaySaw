@@ -25,6 +25,7 @@ export function Navbar() {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [solutionsOpen, setSolutionsOpen] = useState(false);
+  const [closeTimeout, setCloseTimeout] = useState<NodeJS.Timeout | null>(null);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -48,53 +49,75 @@ export function Navbar() {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-6 ml-auto">
-          {navigation.map((item) => (
-            <div key={item.name} className="relative">
-              {item.items ? (
+<div className="hidden md:flex items-center gap-6 ml-auto">
+  {navigation.map((item) => (
+        <div key={item.name} className="relative">
+          {item.items ? (
+            <div 
+              className="relative group"
+              onMouseEnter={() => {
+                if (closeTimeout) {
+                  clearTimeout(closeTimeout);
+                  setCloseTimeout(null);
+                }
+                setSolutionsOpen(true);
+              }}
+              onMouseLeave={() => {
+                // Add delay before closing
+                const timeout = setTimeout(() => {
+                  setSolutionsOpen(false);
+                }, 300); // 300ms delay
+                setCloseTimeout(timeout);
+              }}
+            >
+              <button className="flex items-center gap-1 text-sm font-medium text-gray-700 hover:text-gray-900">
+                {item.name}
+                <ChevronDown className={`h-4 w-4 transition-transform ${solutionsOpen ? 'rotate-180' : ''}`} />
+              </button>
+              
+              {solutionsOpen && (
                 <div 
-                  className="relative group"
-                  onMouseEnter={() => setSolutionsOpen(true)}
-                  onMouseLeave={() => setTimeout(() => setSolutionsOpen(false), 500)}
+                  className="absolute top-full left-0 mt-3 w-72 bg-white shadow-lg rounded-lg py-2 z-50 border border-gray-200 transition-opacity duration-200"
+                  onMouseEnter={() => {
+                    if (closeTimeout) {
+                      clearTimeout(closeTimeout);
+                      setCloseTimeout(null);
+                    }
+                  }}
+                  onMouseLeave={() => {
+                    const timeout = setTimeout(() => {
+                      setSolutionsOpen(false);
+                    }, 300);
+                    setCloseTimeout(timeout);
+                  }}
                 >
-                  <button className="flex items-center gap-1 text-sm font-medium text-gray-700 hover:text-gray-900">
-                    {item.name}
-                    <ChevronDown className={`h-4 w-4 transition-transform ${solutionsOpen ? 'rotate-180' : ''}`} />
-                  </button>
-                  
-                  {solutionsOpen && (
-                    <div 
-                      className="absolute top-full left-0 mt-2 w-72 bg-white shadow-lg rounded-lg py-2 z-50 border border-gray-200"
-                      onMouseEnter={() => setSolutionsOpen(true)}
-                      onMouseLeave={() => setTimeout(() => setSolutionsOpen(false), 500)}
-                    >
-                      {item.items.map((subItem) => (
-                        <Link
-                          key={subItem.name}
-                          href={subItem.href}
-                          className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900"
-                          onClick={() => setSolutionsOpen(false)}
-                        >
-                          {subItem.name}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              ) : (
+              {item.items.map((subItem) => (
                 <Link
-                  href={item.href}
-                  className="text-sm font-medium text-gray-700 hover:text-gray-900"
+                  key={subItem.name}
+                  href={subItem.href}
+                  className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900"
+                  onClick={() => setSolutionsOpen(false)}
                 >
-                  {item.name}
+                  {subItem.name}
                 </Link>
-              )}
+              ))}
             </div>
-          ))}
-          <Link href="/book" className="btn-primary">
-            Book Appointment
-          </Link>
+          )}
         </div>
+      ) : (
+        <Link
+          href={item.href}
+          className="text-sm font-medium text-gray-700 hover:text-gray-900"
+        >
+          {item.name}
+        </Link>
+      )}
+    </div>
+  ))}
+  <Link href="/book" className="btn-primary">
+    Book Appointment
+  </Link>
+</div>
 
         {/* Mobile Menu Button */}
         <button 

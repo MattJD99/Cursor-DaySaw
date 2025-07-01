@@ -89,22 +89,21 @@ export function Hero() {
       {/* Background section with video */}
       <div className="absolute inset-x-0 top-0 -z-10 h-[800px] bg-white">
         <div className="relative w-full h-full rounded-b-[80px] overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white z-10" />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-transparent z-10" />
           <video
             ref={videoRef}
-            className="w-full h-full object-cover mt-16"
+            className="w-full h-full object-cover"
             autoPlay
             loop
             muted
             playsInline
-            style={{ objectPosition: '50% 40%' }}
           >
             <source src="/images/daysaw-video.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
 
-      <div className="relative z-20 text-center px-6 max-w-4xl mx-auto pt-32">
+      <div className="relative z-20 text-center px-6 max-w-4xl mx-auto pt-0">
         {/* Headline - No background */}
         <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 mb-6">
           More <span className="gradient-text">Reviews</span>, Less <span className="gradient-text">Effort</span>. It's That <span className="gradient-text">Simple</span>.
@@ -135,7 +134,7 @@ export function Hero() {
         </div>
 
         {/* Donation Counter Section */}
-        <div className="mt-16 bg-white/70 backdrop-blur-md rounded-xl shadow-lg p-6 max-w-2xl mx-auto flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0 sm:space-x-6">
+        <div className="mt-0 bg-white/70 backdrop-blur-md rounded-xl shadow-lg p-6 max-w-2xl mx-auto flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0 sm:space-x-6">
           <div className="text-left">
             <h3 className="text-lg font-semibold text-gray-800 mb-1">Make a Difference With Every Review</h3>
             <p className="text-sm text-gray-600">For every review your business receives through DaySaw, we donate a meal via Feeding America.</p>

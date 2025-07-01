@@ -38,39 +38,55 @@ const config: Config = {
             backgroundPosition: "0% 50%",
           },
         },
-  			"accordion-down": {
-  				from: { height: "0" },
-  				to: { height: "var(--radix-accordion-content-height)" },
-  			},
-  			"accordion-up": {
-  				from: { height: "var(--radix-accordion-content-height)" },
-  				to: { height: "0" },
-  			},
-  			"border-flow": {
-  				"0%, 100%": { 
-  					borderImage: "linear-gradient(to right, #2563eb, #60a5fa, #4f46e5) 1",
-  					borderImageSlice: "1"
-  				},
-  				"25%": { 
-  					borderImage: "linear-gradient(to bottom, #2563eb, #60a5fa, #4f46e5) 1",
-  					borderImageSlice: "1"
-  				},
-  				"50%": { 
-  					borderImage: "linear-gradient(to left, #2563eb, #60a5fa, #4f46e5) 1",
-  					borderImageSlice: "1"
-  				},
-  				"75%": { 
-  					borderImage: "linear-gradient(to top, #2563eb, #60a5fa, #4f46e5) 1",
-  					borderImageSlice: "1"
-  				}
-  			}
-  		},
-  		animation: {
-  			"accordion-down": "accordion-down 0.2s ease-out",
-  			"accordion-up": "accordion-up 0.2s ease-out",
-  			"border-flow": "border-flow 4s ease infinite",
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "极var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+        "border-flow": {
+          "0%, 100%": { 
+            borderImage: "linear-gradient(to right, #2563eb, #60a5fa, #4f46e5) 1",
+            borderImageSlice: "1"
+          },
+          "25%": { 
+            borderImage: "linear-gradient(to bottom, #2563eb, #60a5fa, #4f46e5) 1",
+            borderImageSlice: "1"
+          },
+          "50%": { 
+            borderImage: "linear-gradient(to left, #2563eb, #60a5fa, #4f46e5) 1",
+            borderImageSlice: "1"
+          },
+          "75%": { 
+            borderImage: "linear-gradient(to top, #2563eb, #60a5fa, #4f46e5) 1",
+            borderImageSlice: "1"
+          }
+        },
+        "rotate": {
+          from: {
+            transform: "translate(-50%, -50%) rotate(0deg)"
+          },
+          to: {
+            transform: "translate(-50%, -50%) rotate(360deg)"
+          }
+        },
+        // Add float animation for numbers
+        "float": {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-20px)" },
+        }
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+        "border-flow": "border-flow 4s ease infinite",
         "gradient-flow": "gradient-flow 5s ease infinite",
-  		},
+        "border-rotate": "rotate 4s linear infinite",
+        // Add float animation utility
+        "float": "float 5s ease-in-out infinite",
+      },
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',

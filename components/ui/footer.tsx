@@ -44,11 +44,13 @@ const GhlFormEmbed = dynamic(() => import('@/components/ui/GhlFormEmbed'), {
     <footer className="bg-[#FFF8E6] rounded-t-[80px]">
       <div className="mx-auto max-w-7xl px-6 py-12 md:py-16">
         {/* Newsletter Section */}
-        <div className="text-center mb-12">
-          <h2 className="text-[32px] leading-[40px] font-normal text-[#202124] mb-4">Let's get in touch.</h2>
-          <p className="text-[14px] leading-[20px] text-[#5f6368] mb-8">
-            Let us help get you some reviews and grow online today.
-          </p>
+<div className="text-center mb-12">
+  <h2 className="text-[32px] leading-[40px] font-normal text-[#202124] mb-4">
+    Put Your Business Growth on Autopilot.
+  </h2>
+  <p className="text-[14px] leading-[20px] text-[#5f6368] mb-8">
+    Free up your time and never miss an opportunity again. Your automated assistant can handle lead capture, reputation management, and appointment booking for less than $1 an hour.
+  </p>
           <div className="max-w-xl mx-auto">
             <GhlFormEmbed />
           </div>
@@ -65,7 +67,7 @@ const GhlFormEmbed = dynamic(() => import('@/components/ui/GhlFormEmbed'), {
              {/* Assuming logo path is correct */}
             <img className="h-8 w-auto mb-4" src="/images/daysaw-logo-black-transp.png" alt="DaySaw Agency" />
             <p className="text-xs leading-5 text-gray-500 max-w-xs text-center md:text-left">
-              DaySaw helps businesses automate their review management process while making a positive impact through charitable giving.
+              DaySaw.agency provides your business with a 24/7 automated employee to build your reputation, capture every lead, and automate your schedule. For every 5-star review you earn, we donate a meal to someone in need.
             </p>
           </div>
           <div className="mt-8 md:mt-0 flex justify-center space-x-6 md:order-last">
@@ -79,18 +81,23 @@ const GhlFormEmbed = dynamic(() => import('@/components/ui/GhlFormEmbed'), {
         </div>
 
         {/* Footer Links & Copyright */}
-        <div className="mt-8 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between">
-          <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 md:order-2">
-            {navigation.main.map((item) => (
-               <Link key={item.name} href={item.href} className="text-[12px] leading-[16px] text-[#5f6368] hover:text-[#202124]">
-                 {item.name}
-               </Link>
-            ))}
-          </div>
-          <p className="mt-8 text-xs leading-5 text-gray-500 md:order-1 md:mt-0">
-            &copy; {new Date().getFullYear()} DaySaw.agency. All rights reserved.
-          </p>
-        </div>
+<div className="mt-8 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between">
+  <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 md:order-2">
+    {navigation.main.map((item) => (
+       <Link key={item.name} href={item.href} className="text-[12px] leading-[16px] text-[#5f6368] hover:text-[#202124]">
+         {item.name}
+       </Link>
+    ))}
+    {process.env.NODE_ENV === 'development' && (
+      <Link href="/preview" className="text-[12px] leading-[16px] text-[#5f6368] hover:text-[#202124]">
+        Preview
+      </Link>
+    )}
+  </div>
+  <p className="mt-8 text-xs leading-5 text-gray-500 md:order-1 md:mt-0">
+    &copy; {new Date().getFullYear()} DaySaw.agency. All rights reserved.
+  </p>
+</div>
 
       </div>
     </footer>

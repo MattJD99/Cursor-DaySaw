@@ -16,7 +16,7 @@ const plans = [
     ],
     button: {
       text: 'Start Free Trial',
-      href: '/book',
+      href: 'https://checkout.daysaw.agency/?productId=6851320263af10d025bbbe93',
       variant: 'outline',
     }
   },
@@ -35,7 +35,7 @@ const plans = [
     ],
     button: {
       text: 'Start Free Trial',
-      href: '/book',
+      href: 'https://checkout.daysaw.agency/?productId=6851320263af10d025bbbe93',
       variant: 'primary',
     }
   },
@@ -54,7 +54,7 @@ const plans = [
     ],
     button: {
       text: 'Start Free Trial',
-      href: '/book',
+      href: 'https://checkout.daysaw.agency/?productId=685134460ab7a12c43c18c0c',
       variant: 'outline',
     },
     foundingOffer: {
