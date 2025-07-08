@@ -41,8 +41,8 @@ const plans = [
   },
   {
     name: 'Total Automation',
-    price: '497',
-    effectiveRate: '~$0.69/hour',
+    price: '248.50',
+    effectiveRate: '~$0.37/hour',
     description: 'Your complete 24/7 assistant',
     features: [
       'Answers phone calls and books appointments',
@@ -60,7 +60,7 @@ const plans = [
     foundingOffer: {
       price: '149.10',
       effectiveRate: '~$0.21/hour',
-      text: 'FOUNDING MEMBER OFFER'
+      text: '50% OFF'
     }
   },
 ];
