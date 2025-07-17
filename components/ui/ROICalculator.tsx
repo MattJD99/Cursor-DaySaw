@@ -67,7 +67,7 @@ export default function ROICalculator() {
 
         <button 
           onClick={calculateLoss}
-          className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg transition duration-200"
+          className="btn-primary w-full"
         >
           Calculate Missed Revenue
         </button>
